@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PvZ Tutorial Endless</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game" width="960" height="540"></canvas>
+
+    <div id="hud">
+      <div id="sun-display">
+        <img src="assets/Sun.png" alt="Sun">
+        <span id="sun-count">150</span>
+      </div>
+      <div id="seed-bar">
+        <div class="seed" data-type="sunflower">
+          <img src="assets/Sunflower_seed.png" alt="Sunflower">
+          <span class="cost">50</span>
+        </div>
+        <div class="seed" data-type="peashooter">
+          <img src="assets/Peashooter_seed.png" alt="Peashooter">
+          <span class="cost">100</span>
+        </div>
+        <div class="seed" data-type="wallnut">
+          <img src="assets/Wallnut_seed.png" alt="Wall-nut">
+          <span class="cost">50</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="game-over" class="hidden">
+      <div class="game-over-inner">
+        <img src="assets/Game_Over.png" alt="Game Over">
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
